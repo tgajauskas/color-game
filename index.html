@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header" class="header">
+        <h1 id="headerText">The Great <br><span id="rgb"></span><br> color game</h1>
+    </div>
+    <div id="navbar" class="navbar">
+        <button id="newColorBtn" onclick="newColor()">New Colors</button>
+        <button id="easyBtn" onclick="easyGame()">Easy</button>
+        <button id="hardBtn" class="default" onclick="hardGame()">Hard</button>
+    </div>
+    <div class="content">
+        <div id="firstBoxContainer" class="box-container">
+            <div class="box" onclick="checkColor()"></div>
+            <div class="box" onclick="checkColor()"></div>
+            <div class="box" onclick="checkColor()"></div>
+        </div>
+        <div id="secondBoxContainer" class="box-container">
+            <div class="box" onclick="checkColor()"></div>
+            <div class="box" onclick="checkColor()"></div>
+            <div class="box" onclick="checkColor()"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

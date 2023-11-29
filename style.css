@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #232323;
+    font-family: Tahoma;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background: #4682b4;
+}
+
+.header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#rgb {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 30px;
+    background: white;
+}
+
+.navbar button {
+    background: white;
+    color: #4682b4;
+    border: none;
+    padding: 7px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar button:hover {
+    color: white;
+    background: #4682b4;
+}
+
+.default {
+    color: white !important;
+    background: #4682b4 !important;
+}
+
+#newColorBtn {
+    margin-right: 150px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.box-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    min-height: 220px;
+    min-width: 220px;
+    background: white;
+    border-radius: 20px;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+/* Media prisitaikymas */
+
+@media (max-width: 320px) {
+    .header {
+        min-height: 100px;
+    }
+    .header h1 {
+        font-size: 1em;
+    }
+    .navbar {
+        height: 15px;
+    }
+    #newColorBtn {
+        margin-right: 20px;
+    }
+
+    .box {
+        min-height: 70px;
+        min-width: 70px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        width: 100%;
+        min-height: 100px;
+    }
+    .header h1 {
+        font-size: 1.2em;
+    }
+    .navbar {
+        height: 15px;
+    }
+    #newColorBtn {
+        margin-right: 40px;
+    }
+
+    .box {
+        min-height: 90px;
+        min-width: 90px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        width: 100%;
+        min-height: 100px;
+    }
+    .header h1 {
+        font-size: 1.4em;
+    }
+    .navbar {
+        height: 15px;
+    }
+    #newColorBtn {
+        margin-right: 120px;
+    }
+
+    .box {
+        min-height: 100px;
+        min-width: 100px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        min-height: 100px;
+    }
+    .header h1 {
+        font-size: 2em;
+    }
+    .navbar {
+        height: 15px;
+    }
+    #newColorBtn {
+        margin-right: 250px;
+    }
+
+    .box {
+        min-height: 200px;
+        min-width: 200px;
+        border-radius: 15px;
+    }
+}
