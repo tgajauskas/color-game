@@ -9,6 +9,8 @@ var numBoxes = 6
 var color = randomColorGenerator(numBoxes)
 var pickedColor = pickColor()
 
+rgb.textContent = pickedColor
+
 for(var i = 0; i < box.length; i++) {
     box[i].style.background = color[i];
     box[i].onclick = checkColor
@@ -90,5 +92,3 @@ function randomColorGenerator(num){
     }
     return arr;
   }
-
-rgb.textContent = pickedColor
